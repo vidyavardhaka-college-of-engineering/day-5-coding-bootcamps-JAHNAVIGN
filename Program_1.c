@@ -4,22 +4,20 @@
 
 int main()
 {
-	char str[10];
-  int i, count =0;
-
-	scanf("%s", str);
-
-  for(i=0; str[i] !='\0';i++)
+	int i=0, no=0;
+  char str[10];
+   printf("Enter the string:");
+   scanf("%s", str);
+  
+  while(str[i++]!='\0')
   {
     if(str[i]== 'a'||
        str[i]== 'e'||
        str[i]== 'i'||
        str[i]== 'o'||
        str[i]== 'u')
-  { 
-    count++;
+       no++;
   }
-  } 
-   printf("%d",count);
+   printf("No of vowels = %d",no);
 	return 0;
 }
